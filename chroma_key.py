@@ -26,8 +26,8 @@ class LuminanceKey(object):
         self._hsv_target_colors = [] 
         self._new_color = 0, 0, 0, 255
         self._target_colors_locations = []
-        self.main_window = "Live"
-        self.aux_window = "0"
+        self.main_window = "Final"
+        self.aux_window = "Mask"
         cv2.namedWindow(self.main_window, cv2.WINDOW_GUI_NORMAL)
         cv2.setMouseCallback(self.main_window, self.mouse_callback)
         cv2.namedWindow(self.aux_window, cv2.WINDOW_GUI_NORMAL)
